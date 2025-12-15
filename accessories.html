@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Floressa - Accessories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar-container">
+    <div class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/Floressa.png" alt="Floressa Icon" />
+        <div class="brand-text">
+          <span class="brand-name">Floressa</span>
+          <span class="brand-sub">Flower Shop</span>
+        </div>
+      </a>
+       <nav>
+        <ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+  <a href="#">Collection</a>
+  <ul class="dropdown-menu">
+    <li><a href="flowers.html">Flowers</a></li>
+    <li><a href="plants.html">Plants</a></li>
+    <li><a href="accessories.html">Accessories</a></li>
+  </ul>
+</li>
+
+ <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</ul>
+
+      </nav>
+      <a class="btn" href="pricelist.html">Price List</a>
+    </div>
+  </header>
+
+  <!-- Accessories Section -->
+  <section class="flowers-section">
+  <div class="flowers-header">
+  </div>
+
+  <div class="flowers-grid">
+    <div class="flower-card">
+      <a href="#" class="product-link" data-product-name="Ribbons" data-product-price="$5">
+        <img src="images/Ribbon.png" alt="Ribbons">
+      </a>
+      <p>Ribbons</p>
+    </div>
+
+    <div class="flower-card">
+      <a href="#" class="product-link" data-product-name="Vases" data-product-price="$10">
+        <img src="images/Vases.png" alt="Vases">
+      </a>
+      <p>Vases</p>
+    </div>
+
+    <div class="flower-card">
+      <a href="#" class="product-link" data-product-name="Baskets" data-product-price="$12">
+        <img src="images/Baskets.png" alt="Baskets">
+      </a>
+      <p>Baskets</p>
+    </div>
+
+    <div class="flower-card">
+      <a href="#" class="product-link" data-product-name="Gift Boxes" data-product-price="$8">
+        <img src="images/Gift Boxes.png" alt="Gift Boxes">
+      </a>
+      <p>Gift Boxes</p>
+    </div>
+
+    <div class="flower-card">
+      <a href="#" class="product-link" data-product-name="Wrapping Paper" data-product-price="$4">
+        <img src="images/Wrapping Paper.png" alt="Wrapping Paper">
+      </a>
+      <p>Wrapping Paper</p>
+    </div>
+
+    <div class="flower-card">
+      <a href="#" class="product-link" data-product-name="Greeting Cards" data-product-price="$3">
+        <img src="images/Greeting Cards.png" alt="Greeting Cards">
+      </a>
+      <p>Greeting Cards</p>
+    </div>
+
+    <div class="flower-card">
+      <a href="#" class="product-link" data-product-name="Decor Stones" data-product-price="$6">
+        <img src="images/Decor Stones.png" alt="Decor Stones">
+      </a>
+      <p>Decor Stones</p>
+    </div>
+
+    <div class="flower-card">
+      <a href="#" class="product-link" data-product-name="Artificial Leaves" data-product-price="$7">
+        <img src="images/Artificial Leaves.png" alt="Artificial Leaves">
+      </a>
+      <p>Artificial Leaves</p>
+    </div>
+
+    <div class="flower-card">
+      <a href="#" class="product-link" data-product-name="Gift Tags" data-product-price="$2">
+        <img src="images/Gift Tags.png" alt="Gift Tags">
+      </a>
+      <p>Gift Tags</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Product Detail Modal -->
+<div id="productModal" class="modal">
+  <div class="modal-content-large">
+    <span class="close-button">&times;</span>
+    <div class="modal-body">
+      
+      <div class="modal-image">
+        <img id="modalImage" src="" alt="Product">
+      </div>
+
+      <div class="modal-info">
+        <h2 id="modalProductName">Product Name</h2>
+        <p class="modal-price">Price: <span id="modalPrice">$0</span></p>
+
+        <div class="quantity-wrapper">
+          <button id="decreaseQty">-</button>
+          <input type="number" id="quantity" value="1" min="1" readonly />
+          <button id="increaseQty">+</button>
+        </div>
+
+        <button id="buyButton">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Floressa Flower Shop. All rights reserved.</p>
+      <p>Follow us: 
+        <a href="#"><i class="fab fa-instagram"></i></a> |
+        <a href="#"><i class="fab fa-facebook"></i></a> |
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </p>
+    </div>
+  </footer>
+<script src="script.js" defer></script>
+
+</body>
+</html>

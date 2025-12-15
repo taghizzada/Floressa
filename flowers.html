@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Floressa - Flowers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar-container">
+    <div class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/Floressa.png" alt="Floressa Icon" />
+        <div class="brand-text">
+          <span class="brand-name">Floressa</span>
+          <span class="brand-sub">Flower Shop</span>
+        </div>
+      </a>
+         <nav>
+        <ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+  <a href="#">Collection</a>
+  <ul class="dropdown-menu">
+    <li><a href="flowers.html">Flowers</a></li>
+    <li><a href="plants.html">Plants</a></li>
+    <li><a href="accessories.html">Accessories</a></li>
+  </ul>
+</li>
+
+ <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</ul>
+
+      </nav>
+      <a class="btn" href="pricelist.html">Price List</a>
+    </div>
+  </header>
+
+  <!-- Flowers Section -->
+  <section class="flowers-section">
+    <div class="flowers-header">
+    </div>
+
+   <div class="flowers-grid">
+    
+  <!-- 9 flowers images -->
+
+  <div class="flower-card">
+    <a href="#" class="product-link" data-product-name="Rose" data-product-price="$20">
+      <img src="images/rose.png" alt="Rose">
+    </a>
+    <p>Rose</p>
+  </div>
+
+  <div class="flower-card">
+    <a href="#" class="product-link" data-product-name="Tulip" data-product-price="$18">
+      <img src="images/Tulip.png" alt="Tulip">
+    </a>
+    <p>Tulip</p>
+  </div>
+
+  <div class="flower-card">
+    <a href="#" class="product-link" data-product-name="Lily" data-product-price="$25">
+      <img src="images/Lily.png" alt="Lily">
+    </a>
+    <p>Lily</p>
+  </div>
+
+  <div class="flower-card">
+    <a href="#" class="product-link" data-product-name="Peony" data-product-price="$30">
+      <img src="images/Peony.png" alt="Peony">
+    </a>
+    <p>Peony</p>
+  </div>
+
+  <div class="flower-card">
+    <a href="#" class="product-link" data-product-name="Daisy" data-product-price="$15">
+      <img src="images/Daisy.png" alt="Daisy">
+    </a>
+    <p>Daisy</p>
+  </div>
+
+  <div class="flower-card">
+    <a href="#" class="product-link" data-product-name="Hydrangea" data-product-price="$28">
+      <img src="images/Hydrangea.png" alt="Hydrangea">
+    </a>
+    <p>Hydrangea</p>
+  </div>
+
+  <div class="flower-card">
+    <a href="#" class="product-link" data-product-name="Carnation" data-product-price="$17">
+      <img src="images/Carnation.png" alt="Carnation">
+    </a>
+    <p>Carnation</p>
+  </div>
+
+  <div class="flower-card">
+    <a href="#" class="product-link" data-product-name="Orchid" data-product-price="$35">
+      <img src="images/Orchid.png" alt="Orchid">
+    </a>
+    <p>Orchid</p>
+  </div>
+
+  <div class="flower-card">
+    <a href="#" class="product-link" data-product-name="Sunflower" data-product-price="$22">
+      <img src="images/Sunflower.png" alt="Sunflower">
+    </a>
+    <p>Sunflower</p>
+  </div>
+
+</div>
+
+  </section>
+
+  <!-- Product Detail Modal -->
+<div id="productModal" class="modal">
+  <div class="modal-content-large">
+    <span class="close-button">&times;</span>
+    <div class="modal-body">
+      
+      <div class="modal-image">
+        <img id="modalImage" src="" alt="Product">
+      </div>
+
+      <div class="modal-info">
+        <h2 id="modalProductName">Product Name</h2>
+        <p class="modal-price">Price: <span id="modalPrice">$0</span></p>
+
+        <div class="quantity-wrapper">
+          <button id="decreaseQty">-</button>
+          <input type="number" id="quantity" value="1" min="1" readonly />
+          <button id="increaseQty">+</button>
+        </div>
+
+        <button id="buyButton">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Floressa Flower Shop. All rights reserved.</p>
+      <p>Follow us: 
+        <a href="#"><i class="fab fa-instagram"></i></a> |
+        <a href="#"><i class="fab fa-facebook"></i></a> |
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </p>
+    </div>
+  </footer>
+<script src="script.js" defer></script>
+
+</body>
+</html>
